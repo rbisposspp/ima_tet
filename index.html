@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Stylized armchair scene: a child listening to music with a cat on their lap."
+    />
+    <title>Armchair Scene</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="scene" aria-labelledby="scene-title">
+      <h1 id="scene-title" class="sr-only">Cozy armchair listening scene</h1>
+
+      <section class="artboard" role="img" aria-label="A child curled up in a fluffy armchair with a cat on their lap, wearing big headphones and listening to music.">
+        <div class="music-toggle-wrap">
+          <button id="musicToggle" class="music-toggle" type="button" aria-pressed="true">
+            Pause music animation
+          </button>
+          <p id="musicStatus" class="music-status" aria-live="polite">Music is playing</p>
+        </div>
+
+        <div class="equalizer" aria-hidden="true">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <div class="armchair" aria-hidden="true">
+          <div class="chair-back"></div>
+          <div class="chair-seat"></div>
+          <div class="chair-left-arm"></div>
+          <div class="chair-right-arm"></div>
+        </div>
+
+        <div class="child" aria-hidden="true">
+          <div class="head">
+            <div class="hair"></div>
+            <div class="headphone headband"></div>
+            <div class="headphone cup-left"></div>
+            <div class="headphone cup-right">
+              <span class="brand" aria-hidden="true">RBS ESL Tech Teach</span>
+            </div>
+          </div>
+          <div class="torso"></div>
+          <div class="legs"></div>
+        </div>
+
+        <div class="cat" aria-hidden="true">
+          <div class="cat-head"></div>
+          <div class="cat-body"></div>
+          <div class="cat-tail"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
